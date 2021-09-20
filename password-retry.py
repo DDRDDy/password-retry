@@ -6,5 +6,8 @@ while x < 4:  #只能輸入三次
 		print('登入成功!')
 		break
 	else: 
-		print('密碼錯誤!還有', i, '次機會')
+		if i == 0:
+			print('密碼錯誤!你沒機會了!')
+		else:
+			print('密碼錯誤!還有', i, '次機會')
 	x = x + 1
